@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Easy Pairing — Privacy Policy / นโยบายความเป็นส่วนตัว</title>
+<style>
+  :root{
+    --green-dark:#14572A;
+    --green-main:#1E7A3C;
+    --green-tint:#E8F6EC;
+    --bg:#F2F4F1;
+    --card:#FFFFFF;
+    --text:#1A1F1B;
+    --muted:#6E7A70;
+    --line:#E4E8E3;
+    --radius:16px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Tahoma, "Leelawadee UI", "Sarabun", Arial, sans-serif;
+    line-height:1.65;
+    font-size:16px;
+    -webkit-text-size-adjust:100%;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:16px}
+
+  /* Header */
+  header{
+    background:linear-gradient(135deg,var(--green-dark),var(--green-main));
+    color:#fff;border-radius:var(--radius);
+    padding:22px 20px;margin-top:16px;
+  }
+  .brand{display:flex;align-items:center;gap:12px}
+  .mark{
+    width:44px;height:44px;border-radius:12px;flex:0 0 auto;
+    background:rgba(255,255,255,.16);
+    display:flex;align-items:center;justify-content:center;font-size:24px;
+  }
+  .brand h1{font-size:20px;margin:0;font-weight:800;letter-spacing:.2px}
+  header p{margin:10px 0 0;opacity:.92;font-size:14.5px}
+  .meta{margin-top:12px;font-size:13.5px;opacity:.95}
+  .meta b{font-weight:700}
+
+  /* Language toggle */
+  .langbar{display:flex;gap:8px;margin:16px 0}
+  .langbar button{
+    flex:1;border:1px solid var(--line);background:var(--card);
+    color:var(--muted);font:inherit;font-weight:700;font-size:14.5px;
+    padding:11px 10px;border-radius:999px;cursor:pointer;
+  }
+  body.js.show-en .langbar .btn-en,
+  body.js:not(.show-en) .langbar .btn-th{
+    background:var(--green-main);border-color:var(--green-main);color:#fff;
+  }
+
+  /* Cards / sections */
+  section.policy{
+    background:var(--card);border:1px solid var(--line);
+    border-radius:var(--radius);padding:18px 18px 6px;margin-bottom:16px;
+  }
+  h2.section-lang{
+    font-size:15px;color:var(--muted);font-weight:700;
+    margin:0 0 4px;text-transform:uppercase;letter-spacing:.5px;
+  }
+  h3{font-size:17px;font-weight:800;margin:18px 0 6px;color:var(--green-dark)}
+  h3:first-of-type{margin-top:8px}
+  p{margin:6px 0}
+  ul{margin:6px 0 10px;padding-left:20px}
+  li{margin:5px 0}
+  .muted{color:var(--muted);font-size:14px}
+
+  /* Deletion highlight box */
+  .delete-box{
+    background:var(--green-tint);border:1px solid #BFE6CC;
+    border-radius:12px;padding:14px 16px;margin:12px 0 16px;
+  }
+  .delete-box h3{margin-top:0;color:var(--green-dark)}
+  .email{
+    display:inline-block;font-weight:800;color:var(--green-dark);
+    background:#fff;border:1px solid #BFE6CC;border-radius:8px;
+    padding:3px 10px;margin:2px 0;word-break:break-all;
+  }
+
+  footer{color:var(--muted);font-size:13px;text-align:center;padding:10px 0 28px}
+
+  /* Language show/hide (progressive enhancement) */
+  body.js .lang-en{display:none}
+  body.js.show-en .lang-en{display:block}
+  body.js.show-en .lang-th{display:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand">
+      <div class="mark" aria-hidden="true">🌱</div>
+      <h1>Easy Pairing</h1>
+    </div>
+    <p>Privacy Policy &middot; นโยบายความเป็นส่วนตัว</p>
+    <div class="meta">
+      <span class="lang-th"><b>วันที่มีผล:</b> 12 ตุลาคม 2026 &nbsp;&middot;&nbsp; <b>ติดต่อ:</b> workbtest@gmail.com<br><b>ผู้พัฒนา:</b> Easy Pairing</span>
+      <span class="lang-en"><b>Effective date:</b> 12 October 2026 &nbsp;&middot;&nbsp; <b>Contact:</b> workbtest@gmail.com<br><b>Developer:</b> Easy Pairing</span>
+    </div>
+  </header>
+
+  <div class="langbar" role="group" aria-label="Language">
+    <button type="button" class="btn-th" onclick="setLang('th')">ไทย</button>
+    <button type="button" class="btn-en" onclick="setLang('en')">English</button>
+  </div>
+
+  <!-- ===================== ไทย ===================== -->
+  <section class="policy lang-th">
+    <h2 class="section-lang">ภาษาไทย</h2>
+
+    <h3>1. ข้อมูลที่เราเก็บ</h3>
+    <p>แอป <b>Easy Pairing</b> เก็บข้อมูลเท่าที่จำเป็นต่อการใช้งานระบบดูแลฟาร์ม (ทั้งพืชและปศุสัตว์) ดังนี้:</p>
+    <ul>
+      <li><b>ข้อมูลบัญชี:</b> อีเมลและรหัสผ่านที่คุณใช้สมัคร/เข้าสู่ระบบ และชื่อที่แสดง (ถ้ากรอก) — ใช้เพื่อยืนยันตัวตนเท่านั้น รหัสผ่านถูกจัดเก็บแบบเข้ารหัส (hash) ไม่เก็บเป็นข้อความธรรมดา</li>
+      <li><b>ข้อมูลที่คุณสร้างในแอป:</b> ชื่อพื้นที่ (เช่น แปลงผัก/คอกสัตว์) ชื่ออุปกรณ์ และรหัสอุปกรณ์ (device ID)</li>
+      <li><b>ข้อมูลจากอุปกรณ์/เซนเซอร์:</b> ค่าที่อุปกรณ์ส่งมา (เช่น ค่าที่วัดได้ ระดับแบตเตอรี่) พร้อมเวลาที่บันทึก</li>
+    </ul>
+
+    <h3>2. ข้อมูลที่เรา “ไม่” เก็บ</h3>
+    <ul>
+      <li><b>ตำแหน่ง (Location):</b> แอปไม่เก็บหรือส่งตำแหน่งของคุณ สิทธิ์ตำแหน่งบน Android รุ่นเก่า (11 และต่ำกว่า) ขอไว้เพื่อ “ค้นหาอุปกรณ์ Bluetooth” เท่านั้น บน Android 12 ขึ้นไปเราประกาศ <code>neverForLocation</code> ชัดเจนว่าไม่ใช้สแกน Bluetooth เพื่อหาตำแหน่ง</li>
+      <li><b>รหัส WiFi ของคุณ:</b> ชื่อ WiFi และรหัสผ่านที่กรอกเพื่อตั้งค่าอุปกรณ์ จะถูกส่งตรงไปยังบอร์ดผ่าน Bluetooth เท่านั้น <b>ไม่ถูกส่งหรือเก็บบนเซิร์ฟเวอร์</b></li>
+    </ul>
+
+    <h3>3. เราเก็บข้อมูลไว้ที่ไหน</h3>
+    <p>ข้อมูลถูกเก็บบน <b>เซิร์ฟเวอร์แบบ self-hosted ที่จัดสรรสำหรับโครงการนี้ ผู้พัฒนาเป็นผู้ดูแลการเข้าถึงข้อมูล</b> การรับส่งข้อมูลทั้งหมดเข้ารหัสผ่าน HTTPS (TLS)</p>
+    <p>นอกจากนี้ ข้อมูลเซนเซอร์แบบเรียลไทม์ (telemetry) และคำสั่งที่ส่งไปยังอุปกรณ์ จะถูกส่งผ่าน <b>ผู้ให้บริการ third-party MQTT broker</b> ในฐานะผู้ประมวลผลข้อมูลแทนผู้พัฒนา ผ่านการเชื่อมต่อที่เข้ารหัสแบบ TLS</p>
+
+    <h3>4. การแบ่งปันข้อมูล</h3>
+    <p>เรา <b>ไม่ขาย และไม่แบ่งปัน</b> ข้อมูลของคุณให้บุคคลที่สามเพื่อการโฆษณาหรือการตลาด ยกเว้นผู้ให้บริการที่ประมวลผลข้อมูลแทนเราตามข้อ 3 (เช่น third-party MQTT broker service)</p>
+
+    <div class="delete-box lang-th">
+      <h3>5. วิธีขอลบบัญชีและข้อมูล</h3>
+      <p>คุณขอลบบัญชีและข้อมูลทั้งหมดได้จากในแอป: <b>ตั้งค่า → ลบบัญชีและข้อมูล</b> หรือส่งคำขอมาที่อีเมล:</p>
+      <p><span class="email">workbtest@gmail.com</span></p>
+      <p>การลบจะลบข้อมูลทั้งหมดของคุณอย่างถาวร ได้แก่:</p>
+      <ul>
+        <li>บัญชีผู้ใช้ (อีเมล/ชื่อที่แสดง)</li>
+        <li>พื้นที่ที่สร้างไว้</li>
+        <li>อุปกรณ์ทั้งหมด</li>
+        <li>ประวัติค่าเซนเซอร์ที่บันทึกไว้ทั้งหมด</li>
+      </ul>
+      <p>เราจะดำเนินการลบให้เสร็จ <b>ภายใน 7 วัน</b> นับจากได้รับคำขอ — ข้อมูลที่ลบแล้วไม่สามารถกู้คืนได้</p>
+      <p>เราเก็บข้อมูลของคุณไว้จนกว่าคุณจะขอลบบัญชีและข้อมูล</p>
+    </div>
+
+    <h3>6. การเปลี่ยนแปลงนโยบาย</h3>
+    <p>หากมีการแก้ไขนโยบายนี้ เราจะอัปเดตวันที่มีผลด้านบน</p>
+
+    <h3>7. ติดต่อเรา</h3>
+    <p>อีเมล: <span class="email">workbtest@gmail.com</span></p>
+  </section>
+
+  <!-- ===================== English ===================== -->
+  <section class="policy lang-en">
+    <h2 class="section-lang">English</h2>
+
+    <h3>1. Information We Collect</h3>
+    <p><b>Easy Pairing</b> collects only what is needed to run the farm-monitoring service (for both crops and livestock):</p>
+    <ul>
+      <li><b>Account data:</b> the email and password you use to register/sign in, and your display name (if provided) — used only for authentication. Passwords are stored hashed, never in plain text.</li>
+      <li><b>Content you create in the app:</b> area names (e.g. a vegetable plot or an animal pen), device names, and device IDs.</li>
+      <li><b>Device/sensor data:</b> values your devices report (e.g. measured readings, battery level) with their timestamps.</li>
+    </ul>
+
+    <h3>2. Information We Do NOT Collect</h3>
+    <ul>
+      <li><b>Location:</b> the app does not collect or transmit your location. On older Android (11 and below) the location permission is requested only to <b>scan for Bluetooth devices</b>; on Android 12+ we declare <code>neverForLocation</code>, meaning Bluetooth scanning is not used to derive location.</li>
+      <li><b>Your WiFi credentials:</b> the WiFi name and password you enter to set up a device are sent directly to the board over Bluetooth only — they are <b>never sent to or stored on any server</b>.</li>
+    </ul>
+
+    <h3>3. Where Data Is Stored</h3>
+    <p>Data is stored on <b>a self-hosted server provisioned for this project, with data access managed by the developer</b>. All data in transit is encrypted over HTTPS (TLS).</p>
+    <p>In addition, real-time sensor data (telemetry) and commands sent to your devices are relayed through a <b>third-party MQTT broker service</b>, acting as a data processor on the developer's behalf, over an encrypted TLS connection.</p>
+
+    <h3>4. Data Sharing</h3>
+    <p>We <b>do not sell or share</b> your data with third parties for advertising or marketing, except for service providers that process data on our behalf as described in Section 3 (e.g. the third-party MQTT broker service).</p>
+
+    <div class="delete-box lang-en">
+      <h3>5. How to Request Account &amp; Data Deletion</h3>
+      <p>You can request deletion of your account and all data from within the app: <b>Settings → Delete account &amp; data</b>, or by emailing:</p>
+      <p><span class="email">workbtest@gmail.com</span></p>
+      <p>Deletion permanently removes all of your data, including:</p>
+      <ul>
+        <li>your user account (email / display name)</li>
+        <li>the areas you created</li>
+        <li>all your devices</li>
+        <li>all recorded sensor history</li>
+      </ul>
+      <p>We will complete the deletion <b>within 7 days</b> of receiving your request. Deleted data cannot be recovered.</p>
+      <p>We keep your data until you request deletion of your account and data.</p>
+    </div>
+
+    <h3>6. Changes to This Policy</h3>
+    <p>If this policy changes, we will update the effective date at the top.</p>
+
+    <h3>7. Contact</h3>
+    <p>Email: <span class="email">workbtest@gmail.com</span></p>
+  </section>
+
+  <footer>Easy Pairing &middot; Privacy Policy</footer>
+</div>
+
+<script>
+  // Progressive enhancement: without JS both languages show (nothing hidden).
+  // With JS we enable the toggle and default to Thai.
+  document.body.classList.add('js');
+  function setLang(l){
+    document.body.classList.toggle('show-en', l === 'en');
+    document.documentElement.lang = l;
+    try{ location.hash = l; }catch(e){}
+  }
+  // honor #en / #th on load
+  setLang(location.hash === '#en' ? 'en' : 'th');
+</script>
+</body>
+</html>
