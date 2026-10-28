@@ -122,7 +122,7 @@
     <p>แอป <b>Easy Pairing</b> เก็บข้อมูลเท่าที่จำเป็นต่อการใช้งานระบบดูแลฟาร์ม (ทั้งพืชและปศุสัตว์) ดังนี้:</p>
     <ul>
       <li><b>ข้อมูลบัญชี:</b> อีเมลและรหัสผ่านที่คุณใช้สมัคร/เข้าสู่ระบบ และชื่อที่แสดง (ถ้ากรอก) — ใช้เพื่อยืนยันตัวตนเท่านั้น รหัสผ่านถูกจัดเก็บแบบเข้ารหัส (hash) ไม่เก็บเป็นข้อความธรรมดา</li>
-      <li><b>ข้อมูลที่คุณสร้างในแอป:</b> ชื่อพื้นที่ (เช่น แปลงผัก/คอกสัตว์) ชื่ออุปกรณ์ และรหัสอุปกรณ์ (device ID)</li>
+      <li><b>ข้อมูลที่คุณสร้างในแอป:</b> ชื่อพื้นที่ (เช่น แปลงผัก/คอกสัตว์) ชื่ออุปกรณ์ รหัสอุปกรณ์ (device ID) และ MAC address ของบอร์ด</li>
       <li><b>ข้อมูลจากอุปกรณ์/เซนเซอร์:</b> ค่าที่อุปกรณ์ส่งมา (เช่น ค่าที่วัดได้ ระดับแบตเตอรี่) พร้อมเวลาที่บันทึก</li>
     </ul>
 
@@ -134,10 +134,10 @@
 
     <h3>3. เราเก็บข้อมูลไว้ที่ไหน</h3>
     <p>ข้อมูลถูกเก็บบน <b>เซิร์ฟเวอร์แบบ self-hosted ที่จัดสรรสำหรับโครงการนี้ ผู้พัฒนาเป็นผู้ดูแลการเข้าถึงข้อมูล</b> การรับส่งข้อมูลทั้งหมดเข้ารหัสผ่าน HTTPS (TLS)</p>
-    <p>นอกจากนี้ ข้อมูลเซนเซอร์แบบเรียลไทม์ (telemetry) และคำสั่งที่ส่งไปยังอุปกรณ์ จะถูกส่งผ่าน <b>ผู้ให้บริการ third-party MQTT broker</b> ในฐานะผู้ประมวลผลข้อมูลแทนผู้พัฒนา ผ่านการเชื่อมต่อที่เข้ารหัสแบบ TLS</p>
+    <p>นอกจากนี้ ข้อมูลเซนเซอร์แบบเรียลไทม์ (telemetry) และคำสั่งที่ส่งไปยังอุปกรณ์ จะถูกส่งผ่าน <b>ผู้ให้บริการ MQTT broker (บุคคลที่สาม)</b> ในฐานะผู้ประมวลผลข้อมูลแทนผู้พัฒนา ผ่านการเชื่อมต่อที่เข้ารหัสแบบ TLS</p>
 
     <h3>4. การแบ่งปันข้อมูล</h3>
-    <p>เรา <b>ไม่ขาย และไม่แบ่งปัน</b> ข้อมูลของคุณให้บุคคลที่สามเพื่อการโฆษณาหรือการตลาด ยกเว้นผู้ให้บริการที่ประมวลผลข้อมูลแทนเราตามข้อ 3 (เช่น third-party MQTT broker service)</p>
+    <p>เรา <b>ไม่ขาย และไม่แบ่งปัน</b> ข้อมูลของคุณให้บุคคลที่สามเพื่อการโฆษณาหรือการตลาด ยกเว้นผู้ให้บริการที่ประมวลผลข้อมูลแทนเราตามข้อ 3 (เช่น ผู้ให้บริการ MQTT broker)</p>
 
     <div class="delete-box lang-th">
       <h3>5. วิธีขอลบบัญชีและข้อมูล</h3>
@@ -169,7 +169,7 @@
     <p><b>Easy Pairing</b> collects only what is needed to run the farm-monitoring service (for both crops and livestock):</p>
     <ul>
       <li><b>Account data:</b> the email and password you use to register/sign in, and your display name (if provided) — used only for authentication. Passwords are stored hashed, never in plain text.</li>
-      <li><b>Content you create in the app:</b> area names (e.g. a vegetable plot or an animal pen), device names, and device IDs.</li>
+      <li><b>Content you create in the app:</b> area names (e.g. a vegetable plot or an animal pen), device names, device IDs, and the board's MAC address.</li>
       <li><b>Device/sensor data:</b> values your devices report (e.g. measured readings, battery level) with their timestamps.</li>
     </ul>
 
