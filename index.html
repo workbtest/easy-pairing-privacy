@@ -134,7 +134,7 @@
     </ul>
 
     <h3>3. เราเก็บข้อมูลไว้ที่ไหน</h3>
-    <p>ข้อมูลถูกเก็บบน <b>เซิร์ฟเวอร์แบบ self-hosted ที่จัดสรรสำหรับโครงการนี้ ผู้พัฒนาเป็นผู้ดูแลการเข้าถึงข้อมูล</b> การรับส่งข้อมูลทั้งหมดเข้ารหัสผ่าน HTTPS (TLS)</p>
+    <p>ข้อมูลถูกเก็บบน <b>เซิร์ฟเวอร์แบบ self-hosted ที่จัดสรรสำหรับโครงการนี้ ผู้พัฒนาและผู้ดูแลระบบของบริษัทเป็นผู้ดูแลการเข้าถึงข้อมูล</b> การรับส่งข้อมูลทั้งหมดเข้ารหัสผ่าน HTTPS (TLS)</p>
     <p>นอกจากนี้ ข้อมูลเซนเซอร์แบบเรียลไทม์ (telemetry) และคำสั่งที่ส่งไปยังอุปกรณ์ จะถูกส่งผ่าน <b>ผู้ให้บริการ MQTT broker (บุคคลที่สาม)</b> ในฐานะผู้ประมวลผลข้อมูลแทนผู้พัฒนา ผ่านการเชื่อมต่อที่เข้ารหัสแบบ TLS</p>
 
     <h3>4. การแบ่งปันข้อมูล</h3>
@@ -151,6 +151,7 @@
         <li>อุปกรณ์ทั้งหมด</li>
         <li>ประวัติค่าเซนเซอร์ที่บันทึกไว้ทั้งหมด</li>
       </ul>
+      <p><b>ข้อยกเว้น:</b> ข้อมูลทางเทคนิคในบันทึกระบบ (log) ตามหัวข้อ 1 ข้อ 4 ไม่ได้ถูกลบตามคำขอรายบุคคล และอาจยังคงอยู่จนกว่าจะถูกลบตามรอบการจัดเก็บของระบบ</p>
       <p>เราจะดำเนินการลบให้เสร็จ <b>ภายใน 7 วัน</b> นับจากได้รับคำขอ — ข้อมูลที่ลบแล้วไม่สามารถกู้คืนได้</p>
       <p>เราเก็บข้อมูลของคุณไว้จนกว่าคุณจะขอลบบัญชีและข้อมูล</p>
     </div>
@@ -182,7 +183,7 @@
     </ul>
 
     <h3>3. Where Data Is Stored</h3>
-    <p>Data is stored on <b>a self-hosted server provisioned for this project, with data access managed by the developer</b>. All data in transit is encrypted over HTTPS (TLS).</p>
+    <p>Data is stored on <b>a self-hosted server provisioned for this project, with data access managed by the developer and the company&#39;s system administrators</b>. All data in transit is encrypted over HTTPS (TLS).</p>
     <p>In addition, real-time sensor data (telemetry) and commands sent to your devices are relayed through a <b>third-party MQTT broker service</b>, acting as a data processor on the developer's behalf, over an encrypted TLS connection.</p>
 
     <h3>4. Data Sharing</h3>
@@ -199,6 +200,7 @@
         <li>all your devices</li>
         <li>all recorded sensor history</li>
       </ul>
+      <p><b>Exception:</b> technical data in system logs (see Section 1, item 4) is not deleted on an individual request and may remain until it is removed under the system&#39;s log retention cycle.</p>
       <p>We will complete the deletion <b>within 7 days</b> of receiving your request. Deleted data cannot be recovered.</p>
       <p>We keep your data until you request deletion of your account and data.</p>
     </div>
